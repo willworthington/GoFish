@@ -7,7 +7,7 @@
 #include "player.h"
 
 using namespace std;
-
+/*
 Player::Player(){
 
 }
@@ -85,4 +85,4 @@ bool Player::checkHandForPair(Card &c1, Card &c2){
 
 bool Player::sameRankInHand(Card c) const{
 
-}
+}*/

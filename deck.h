@@ -22,6 +22,7 @@
 class Deck
 {
   static const int SIZE = 52;
+  //static const Card EMPTY_DECK(NULL,NULL);
   
   public:
     
@@ -29,7 +30,8 @@ class Deck
     Deck();           // pristine, sorted deck
 
     void shuffle();   // shuffle the deck, all 52 cards present
-    Card dealCard();   // get a card, after 52 are dealt, fail 
+    Card dealCard();   // get a card, after 52 are dealt, fail
+    void showDeck();   // for testing purposes, shows current state of deck
 
     int  size() const; // # cards left in the deck
 
