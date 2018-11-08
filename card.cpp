@@ -16,7 +16,7 @@ Card::Card(int rank, Suit s){
     myRank = rank;
     mySuit = s;
 }
-
+/*
 //Sets the rank
 void Card::setRank(const int& rank){
     myRank = rank;
@@ -24,7 +24,7 @@ void Card::setRank(const int& rank){
 
 void Card::setSuit(const Suit& s){
     mySuit = s;
-}
+}*/
 
 // return string version e.g. Ac 4h Js
 string Card::toString()const{

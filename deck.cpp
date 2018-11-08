@@ -21,10 +21,10 @@ Deck::Deck(){
 
         for (int j=1; j<=13; j++){
             shift = (i-1)*13-1;
-            //Card c1(j,currentSuit);
-            //myCards[i*j-1]=c1;
-            myCards[shift+j].setRank(j);
-            myCards[shift+j].setSuit(currentSuit);
+            Card c1(j,currentSuit);
+            myCards[shift+j] = c1;
+            //myCards[shift+j].setRank(j);
+            //myCards[shift+j].setSuit(currentSuit);
         }
 
 
@@ -55,11 +55,7 @@ void Deck::shuffle(){
 
 // get a card, after 52 are dealt, fail
 Card Deck::dealCard(){
-    //Card cardio;
-    //static int topOfDeck = 51;
     Card temp = myCards[myIndex];
-    //myCards[myIndex].setRank(NULL);
-    //myCards[topOfDeck].setSuit(NULL);
     myIndex--;
     return temp;
 

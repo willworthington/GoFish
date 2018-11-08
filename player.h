@@ -52,8 +52,10 @@ class Player
     bool cardInHand(Card c) const; 
     
     //Remove the card c from the hand and return it to the caller
-    Card removeCardFromHand(Card c); 
-    
+    Card removeCardFromHand(Card c);
+    Card removeRankFromHand(Card c);
+
+
     string showHand() const; 
     string showBooks() const; 
     
