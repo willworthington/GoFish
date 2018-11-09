@@ -12,21 +12,35 @@ iostream
 string
 -
 
+C:/Users/willworthington/CLionProjects/GoFish/deck.cpp
+iostream
+-
+time.h
+-
+cstdlib
+-
+deck.h
 C:/Users/willworthington/CLionProjects/GoFish/deck.h
 card.h
 C:/Users/willworthington/CLionProjects/GoFish/card.h
 
-C:/Users/willworthington/CLionProjects/GoFish/main.cpp
-iostream
+C:/Users/willworthington/CLionProjects/GoFish/deck.h
+card.h
+C:/Users/willworthington/CLionProjects/GoFish/card.h
+
+C:/Users/willworthington/CLionProjects/GoFish/player.cpp
+istream
+-
+time.h
 -
 cstdlib
 -
 card.h
 C:/Users/willworthington/CLionProjects/GoFish/card.h
-player.h
-C:/Users/willworthington/CLionProjects/GoFish/player.h
 deck.h
 C:/Users/willworthington/CLionProjects/GoFish/deck.h
+player.h
+C:/Users/willworthington/CLionProjects/GoFish/player.h
 
 C:/Users/willworthington/CLionProjects/GoFish/player.h
 iostream

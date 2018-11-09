@@ -92,7 +92,7 @@
 		<Unit filename="C:/Users/willworthington/CLionProjects/GoFish/deck.h">
 			<Option target="GoFish"/>
 		</Unit>
-		<Unit filename="C:/Users/willworthington/CLionProjects/GoFish/main.cpp">
+		<Unit filename="C:/Users/willworthington/CLionProjects/GoFish/go_fish.cpp">
 			<Option target="GoFish"/>
 		</Unit>
 		<Unit filename="C:/Users/willworthington/CLionProjects/GoFish/player.cpp">

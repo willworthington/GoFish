@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GoFish.dir/main.cpp.obj"
+  "CMakeFiles/GoFish.dir/go_fish.cpp.obj"
   "CMakeFiles/GoFish.dir/deck.cpp.obj"
   "CMakeFiles/GoFish.dir/player.cpp.obj"
   "CMakeFiles/GoFish.dir/card.cpp.obj"

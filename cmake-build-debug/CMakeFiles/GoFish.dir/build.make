@@ -58,23 +58,23 @@ include CMakeFiles\GoFish.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\GoFish.dir\flags.make
 
-CMakeFiles\GoFish.dir\main.cpp.obj: CMakeFiles\GoFish.dir\flags.make
-CMakeFiles\GoFish.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\willworthington\CLionProjects\GoFish\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoFish.dir/main.cpp.obj"
+CMakeFiles\GoFish.dir\go_fish.cpp.obj: CMakeFiles\GoFish.dir\flags.make
+CMakeFiles\GoFish.dir\go_fish.cpp.obj: ..\go_fish.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\willworthington\CLionProjects\GoFish\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoFish.dir/go_fish.cpp.obj"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1411~1.255\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\GoFish.dir\main.cpp.obj /FdCMakeFiles\GoFish.dir\ /FS -c C:\Users\willworthington\CLionProjects\GoFish\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\GoFish.dir\go_fish.cpp.obj /FdCMakeFiles\GoFish.dir\ /FS -c C:\Users\willworthington\CLionProjects\GoFish\go_fish.cpp
 <<
 
-CMakeFiles\GoFish.dir\main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoFish.dir/main.cpp.i"
-	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1411~1.255\bin\Hostx86\x86\cl.exe > CMakeFiles\GoFish.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\willworthington\CLionProjects\GoFish\main.cpp
+CMakeFiles\GoFish.dir\go_fish.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoFish.dir/go_fish.cpp.i"
+	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1411~1.255\bin\Hostx86\x86\cl.exe > CMakeFiles\GoFish.dir\go_fish.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\willworthington\CLionProjects\GoFish\go_fish.cpp
 <<
 
-CMakeFiles\GoFish.dir\main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoFish.dir/main.cpp.s"
+CMakeFiles\GoFish.dir\go_fish.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoFish.dir/go_fish.cpp.s"
 	C:\PROGRA~2\MICROS~3\2017\COMMUN~1\VC\Tools\MSVC\1411~1.255\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\GoFish.dir\main.cpp.s /c C:\Users\willworthington\CLionProjects\GoFish\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\GoFish.dir\go_fish.cpp.s /c C:\Users\willworthington\CLionProjects\GoFish\go_fish.cpp
 <<
 
 CMakeFiles\GoFish.dir\deck.cpp.obj: CMakeFiles\GoFish.dir\flags.make
@@ -136,7 +136,7 @@ CMakeFiles\GoFish.dir\card.cpp.s: cmake_force
 
 # Object files for target GoFish
 GoFish_OBJECTS = \
-"CMakeFiles\GoFish.dir\main.cpp.obj" \
+"CMakeFiles\GoFish.dir\go_fish.cpp.obj" \
 "CMakeFiles\GoFish.dir\deck.cpp.obj" \
 "CMakeFiles\GoFish.dir\player.cpp.obj" \
 "CMakeFiles\GoFish.dir\card.cpp.obj"
@@ -144,7 +144,7 @@ GoFish_OBJECTS = \
 # External object files for target GoFish
 GoFish_EXTERNAL_OBJECTS =
 
-GoFish.exe: CMakeFiles\GoFish.dir\main.cpp.obj
+GoFish.exe: CMakeFiles\GoFish.dir\go_fish.cpp.obj
 GoFish.exe: CMakeFiles\GoFish.dir\deck.cpp.obj
 GoFish.exe: CMakeFiles\GoFish.dir\player.cpp.obj
 GoFish.exe: CMakeFiles\GoFish.dir\card.cpp.obj

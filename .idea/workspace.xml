@@ -13,21 +13,24 @@
   <component name="ChangeListManager">
     <list default="true" id="7d45c058-2d68-42d1-9e26-02ace8eb2467" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/card.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card.h" beforeDir="false" afterPath="$PROJECT_DIR$/card.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/card.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/card.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/deck.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/deck.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/player.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/player.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/objects1.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GoFish.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GoFish.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GoFish.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GoFish.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GoFish.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GoFish.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GoFish.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GoFish.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GoFish.ilk" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/GoFish.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GoFish.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deck.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/deck.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/go_fish.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.h" beforeDir="false" afterPath="$PROJECT_DIR$/player.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +61,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="9008" />
+          <entry key="cpp" value="9324" />
           <entry key="h" value="335" />
           <entry key="txt" value="8" />
         </counts>
@@ -66,7 +69,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="8" />
-          <entry key="ObjectiveC" value="9343" />
+          <entry key="ObjectiveC" value="9659" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -79,16 +82,16 @@
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go_fish.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
+            <state relative-caret-position="170">
+              <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding>
                 <element signature="e#112#159#0" expanded="true" />
               </folding>
@@ -132,11 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deck.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="52" />
-              <folding>
-                <element signature="e#50#69#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -144,7 +144,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-214">
+            <state relative-caret-position="48">
               <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
               <folding>
                 <element signature="e#237#256#0" expanded="true" />
@@ -153,14 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/player.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-              <folding>
-                <element signature="e#50#68#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -171,6 +168,9 @@
     <findStrings>
       <find>my</find>
       <find>removeCard</find>
+      <find>emptyHanded</find>
+      <find>gameRes</find>
+      <find>srand</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,11 +182,12 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/deck.h" />
         <option value="$PROJECT_DIR$/player.h" />
-        <option value="$PROJECT_DIR$/player.cpp" />
         <option value="$PROJECT_DIR$/card.h" />
-        <option value="$PROJECT_DIR$/deck.cpp" />
         <option value="$PROJECT_DIR$/card.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/go_fish.cpp" />
+        <option value="$PROJECT_DIR$/deck.cpp" />
+        <option value="$PROJECT_DIR$/player.cpp" />
       </list>
     </option>
   </component>
@@ -196,11 +197,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="80" />
-    <option name="y" value="22" />
-    <option name="width" value="2743" />
-    <option name="height" value="2023" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-15" />
+    <option name="width" value="1948" />
+    <option name="height" value="2075" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -269,15 +269,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541372640614</updated>
-      <workItem from="1541372645513" duration="35115000" />
+      <workItem from="1541372645513" duration="38162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35115000" />
+    <option name="totallyTimeSpent" value="38162000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="9" width="1097" height="809" extended-state="0" />
+    <frame x="-6" y="0" width="779" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -286,12 +286,12 @@
       <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.3259587" />
+      <window_info anchor="bottom" id="Messages" weight="0.32474965" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32153392" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3104435" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,7 +334,7 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -355,16 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deck.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" selection-start-line="25" selection-end-line="26" selection-end-column="52" />
-          <folding>
-            <element signature="e#50#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/card.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -375,9 +365,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/go_fish.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#112#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/player.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
+        <state relative-caret-position="48">
           <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
           <folding>
             <element signature="e#237#256#0" expanded="true" />
@@ -385,23 +385,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player.cpp">
+    <entry file="file://$PROJECT_DIR$/deck.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
-          <folding>
-            <element signature="e#50#68#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/player.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
-          <folding>
-            <element signature="e#112#159#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,219 @@
+John's Initial Hand: 4c 10c 5c Qs 7s 9c 8c
+Bob's Initial Hand: 2h 3c Ad Qh 3h 9d 10d
+John Books: no cards.
+Bob Books: 3h 3c
+
+John asks - Do you have a 5?
+Bob says - Go Fish.
+John draws Qd.
+John has a pair. John books Qd and Qs.
+
+Bob asks - Do you have a 2?
+John says - Go Fish.
+Bob draws Jd.
+
+John asks - Do you have a 8?
+Bob says - Go Fish.
+John draws Kd.
+
+Bob asks - Do you have a J?
+John says - Go Fish.
+Bob draws Jc.
+Bob has a pair. Bob books Jc and Jd.
+
+John asks - Do you have a 5?
+Bob says - Go Fish.
+John draws 10s.
+John has a pair. John books 10s and 10c.
+
+Bob asks - Do you have a 2?
+John says - Go Fish.
+Bob draws 10h.
+Bob has a pair. Bob books 10h and 10d.
+
+John asks - Do you have a K?
+Bob says - Go Fish.
+John draws 2d.
+
+Bob asks - Do you have a A?
+John says - Go Fish.
+Bob draws 6h.
+
+John asks - Do you have a 7?
+Bob says - Go Fish.
+John draws 4s.
+John has a pair. John books 4s and 4c.
+
+Bob asks - Do you have a 2?
+John says - Yes.  I have a 2.
+Bob books 2h and 2d.
+
+Bob asks - Do you have a Q?
+John says - Go Fish.
+Bob draws Kh.
+
+John asks - Do you have a 5?
+Bob says - Go Fish.
+John draws Ac.
+
+Bob asks - Do you have a A?
+John says - Yes.  I have a A.
+Bob books Ad and Ac.
+
+Bob asks - Do you have a 9?
+John says - Yes.  I have a 9.
+Bob books 9d and 9c.
+
+Bob asks - Do you have a K?
+John says - Yes.  I have a K.
+Bob books Kh and Kd.
+
+Bob asks - Do you have a 6?
+John says - Go Fish.
+Bob draws 4d.
+
+John asks - Do you have a 8?
+Bob says - Go Fish.
+John draws 2s.
+
+Bob asks - Do you have a 4?
+John says - Go Fish.
+Bob draws Js.
+
+John asks - Do you have a 7?
+Bob says - Go Fish.
+John draws Jh.
+
+Bob asks - Do you have a 6?
+John says - Go Fish.
+Bob draws 3s.
+
+John asks - Do you have a 5?
+Bob says - Go Fish.
+John draws Kc.
+
+Bob asks - Do you have a Q?
+John says - Go Fish.
+Bob draws 8h.
+
+John asks - Do you have a K?
+Bob says - Go Fish.
+John draws 7h.
+John has a pair. John books 7h and 7s.
+
+Bob asks - Do you have a 8?
+John says - Yes.  I have a 8.
+Bob books 8h and 8c.
+
+Bob asks - Do you have a Q?
+John says - Go Fish.
+Bob draws 9h.
+
+John asks - Do you have a 2?
+Bob says - Go Fish.
+John draws 2c.
+John has a pair. John books 2c and 2s.
+
+Bob asks - Do you have a 9?
+John says - Go Fish.
+Bob draws 5s.
+
+John asks - Do you have a K?
+Bob says - Go Fish.
+John draws Ah.
+
+Bob asks - Do you have a 4?
+John says - Go Fish.
+Bob draws 7c.
+
+John asks - Do you have a J?
+Bob says - Yes.  I have a J.
+John books Jh and Js.
+
+John asks - Do you have a A?
+Bob says - Go Fish.
+John draws 4h.
+
+Bob asks - Do you have a 4?
+John says - Yes.  I have a 4.
+Bob books 4d and 4h.
+
+Bob asks - Do you have a 7?
+John says - Go Fish.
+Bob draws Ks.
+
+John asks - Do you have a A?
+Bob says - Go Fish.
+John draws Qc.
+
+Bob asks - Do you have a 3?
+John says - Go Fish.
+Bob draws 3d.
+Bob has a pair. Bob books 3d and 3s.
+
+John asks - Do you have a K?
+Bob says - Yes.  I have a K.
+John books Kc and Ks.
+
+John asks - Do you have a Q?
+Bob says - Yes.  I have a Q.
+John books Qc and Qh.
+
+John asks - Do you have a A?
+Bob says - Go Fish.
+John draws 6d.
+
+Bob asks - Do you have a 9?
+John says - Go Fish.
+Bob draws 6c.
+Bob has a pair. Bob books 6c and 6h.
+
+John asks - Do you have a 6?
+Bob says - Go Fish.
+John draws 7d.
+
+Bob asks - Do you have a 7?
+John says - Yes.  I have a 7.
+Bob books 7c and 7d.
+
+Bob asks - Do you have a 5?
+John says - Yes.  I have a 5.
+Bob books 5s and 5c.
+
+Bob asks - Do you have a 9?
+John says - Go Fish.
+Bob draws 6s.
+
+John asks - Do you have a 6?
+Bob says - Yes.  I have a 6.
+John books 6d and 6s.
+
+John asks - Do you have a A?
+Bob says - Go Fish.
+John draws 9s.
+
+Bob asks - Do you have a 9?
+John says - Yes.  I have a 9.
+Bob books 9h and 9s.
+Bob's hand is empty. Bob draws As
+
+Bob asks - Do you have a A?
+John says - Yes.  I have a A.
+Bob books As and Ah.
+Bob's hand is empty. Bob draws 5d
+John's hand is empty. John draws 8s
+
+Bob asks - Do you have a 5?
+John says - Go Fish.
+Bob draws 5h.
+Bob has a pair. Bob books 5h and 5d.
+Bob's hand is empty. Bob draws 8d
+
+John asks - Do you have a 8?
+Bob says - Yes.  I have a 8.
+John books 8s and 8d.
+
+RESULTS:
+John has 20 cards booked.
+Bob has 32 cards booked.
+Bob wins!

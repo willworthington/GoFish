@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/willworthington/CLionProjects/GoFish/card.cpp" "C:/Users/willworthington/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card.cpp.obj"
   "C:/Users/willworthington/CLionProjects/GoFish/deck.cpp" "C:/Users/willworthington/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/deck.cpp.obj"
-  "C:/Users/willworthington/CLionProjects/GoFish/main.cpp" "C:/Users/willworthington/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/main.cpp.obj"
+  "C:/Users/willworthington/CLionProjects/GoFish/go_fish.cpp" "C:/Users/willworthington/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/go_fish.cpp.obj"
   "C:/Users/willworthington/CLionProjects/GoFish/player.cpp" "C:/Users/willworthington/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/player.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

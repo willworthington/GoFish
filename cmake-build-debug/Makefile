@@ -178,32 +178,32 @@ deck.cpp.s:
 	$(MAKE) -f CMakeFiles\GoFish.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\GoFish.dir\deck.cpp.s
 .PHONY : deck.cpp.s
 
-main.obj: main.cpp.obj
+go_fish.obj: go_fish.cpp.obj
 
-.PHONY : main.obj
+.PHONY : go_fish.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\GoFish.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\GoFish.dir\main.cpp.obj
-.PHONY : main.cpp.obj
+go_fish.cpp.obj:
+	$(MAKE) -f CMakeFiles\GoFish.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\GoFish.dir\go_fish.cpp.obj
+.PHONY : go_fish.cpp.obj
 
-main.i: main.cpp.i
+go_fish.i: go_fish.cpp.i
 
-.PHONY : main.i
+.PHONY : go_fish.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\GoFish.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\GoFish.dir\main.cpp.i
-.PHONY : main.cpp.i
+go_fish.cpp.i:
+	$(MAKE) -f CMakeFiles\GoFish.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\GoFish.dir\go_fish.cpp.i
+.PHONY : go_fish.cpp.i
 
-main.s: main.cpp.s
+go_fish.s: go_fish.cpp.s
 
-.PHONY : main.s
+.PHONY : go_fish.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\GoFish.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\GoFish.dir\main.cpp.s
-.PHONY : main.cpp.s
+go_fish.cpp.s:
+	$(MAKE) -f CMakeFiles\GoFish.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\GoFish.dir\go_fish.cpp.s
+.PHONY : go_fish.cpp.s
 
 player.obj: player.cpp.obj
 
@@ -247,9 +247,9 @@ help:
 	@echo ... deck.obj
 	@echo ... deck.i
 	@echo ... deck.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... go_fish.obj
+	@echo ... go_fish.i
+	@echo ... go_fish.s
 	@echo ... player.obj
 	@echo ... player.i
 	@echo ... player.s

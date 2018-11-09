@@ -1,6 +1,7 @@
 // FILE: card_demo.cpp
 // This is a small demonstration program showing how the Card and Deck classes are used.
 #include <iostream>    // Provides cout and cin
+#include <fstream>
 #include <cstdlib>     // Provides EXIT_SUCCESS
 #include "card.h"
 #include "player.h"
@@ -15,9 +16,9 @@ void testCard();
 void testDeckInit();
 void testDeckShuffle();
 void testGame();
-bool roundOfGame(Player &p1, Player &p2, Deck &d1);
-void gameResults(Player &p1, Player &p2);
-void emptyHanded(Player &p, Deck &d1);
+bool roundOfGame(Player &p1, Player &p2, Deck &d1, ofstream &fout);
+void gameResults(Player &p1, Player &p2, ofstream &fout);
+void emptyHanded(Player &p, Deck &d1, ofstream &fout);
 bool moreCards(Player &p1, Player &p2, Deck &d1);
 void stateOfGame(Player &p1, Player &p2, Deck d1);
 
@@ -90,14 +91,18 @@ void testGame(){
     Player john("John");
     Player bob("Bob");
 
+    ofstream fout("gofish_results.txt");
+
     d1.shuffle();
 
     for (int i=0; i<7; i++){
         john.addCard(d1.dealCard());
         bob.addCard(d1.dealCard());
     }
-    cout << "John's Initial Hand: " << john.showHand() << endl;
-    cout << "Bob's Initial Hand: " << bob.showHand() << endl << endl;
+    //cout << "John's Initial Hand: " << john.showHand() << endl;
+    fout << "John's Initial Hand: " << john.showHand() << endl;
+    //cout << "Bob's Initial Hand: " << bob.showHand() << endl << endl;
+    fout << "Bob's Initial Hand: " << bob.showHand() << endl;
     Card j1, j2, b1, b2;
 
     while(john.checkHandForBook(j1,j2)){
@@ -111,81 +116,93 @@ void testGame(){
         bob.removeCardFromHand(b2);
     }
     if (john.getBookSize()>0){
-        cout << "John Books: " << john.showBooks() << endl;
+        //cout << "John Books: " << john.showBooks() << endl;
+        fout << "John Books: " << john.showBooks() << endl;
     }
     else {
-        cout << "John Books: no cards." << endl;
+        //cout << "John Books: no cards." << endl;
+        fout << "John Books: no cards." << endl;
 
     }
     if (bob.getBookSize()>0){
-        cout << "Bob Books: " << bob.showBooks() << endl;
+        //cout << "Bob Books: " << bob.showBooks() << endl;
+        fout << "Bob Books: " << bob.showBooks() << endl;
     }
     else{
-        cout << "Bob Books: no cards" << endl;
+        //cout << "Bob Books: no cards" << endl;
+        fout << "Bob Books: no cards" << endl;
     }
 
-    cout << endl;
+    //cout << endl;
+    fout << endl;
 
     //Main loop of game
     while (moreCards(john,bob,d1)){
-        while((moreCards(john,bob,d1))&&(roundOfGame(john,bob,d1)));
-        while((moreCards(john,bob,d1))&&(roundOfGame(bob,john,d1)));
+        while((moreCards(john,bob,d1))&&(roundOfGame(john,bob,d1,fout)));
+        while((moreCards(john,bob,d1))&&(roundOfGame(bob,john,d1,fout)));
 
     }
 
     //Printing the results of the game to the screen
-    gameResults(john, bob);
+    gameResults(john,bob,fout);
 
 
 }
 
-bool roundOfGame(Player &p1, Player &p2, Deck &d1){
+bool roundOfGame(Player &p1, Player &p2, Deck &d1, ofstream &fout){
     bool guessedRight;
     Card guess;
     Card returnedCard;
     Card drawnCard;
     guess = p1.chooseCardFromHand();
-    cout << p1.getName() << " asks - Do you have a " << guess.rankString(guess.getRank()) << "?" << endl;
+    //cout << p1.getName() << " asks - Do you have a " << guess.rankString(guess.getRank()) << "?" << endl;
+    fout << p1.getName() << " asks - Do you have a " << guess.rankString(guess.getRank()) << "?" << endl;
     if(p2.rankInHand(guess)){
         //they will get another turn since they guessed right
         guessedRight = true;
 
-        cout << p2.getName() << " says - Yes.  I have a " << guess.rankString(guess.getRank()) << "." << endl;
+        //cout << p2.getName() << " says - Yes.  I have a " << guess.rankString(guess.getRank()) << "." << endl;
+        fout << p2.getName() << " says - Yes.  I have a " << guess.rankString(guess.getRank()) << "." << endl;
         returnedCard = p2.removeRankFromHand(guess);
         p1.bookCards(guess,returnedCard);
         p1.removeCardFromHand(guess);
-        cout << p1.getName() << " books " << guess.toString() << " and " << returnedCard.toString() << "." << endl;
+        //cout << p1.getName() << " books " << guess.toString() << " and " << returnedCard.toString() << "." << endl;
+        fout << p1.getName() << " books " << guess.toString() << " and " << returnedCard.toString() << "." << endl;
 
         //Checking if either player's hand is empty, and if deck is not empty
         //If yes, will draw a new card for them
-        emptyHanded(p1,d1);
-        emptyHanded(p2,d1);
+        emptyHanded(p1,d1,fout);
+        emptyHanded(p2,d1,fout);
     }
     else{
         guessedRight = false;
-        cout << p2.getName() << " says - Go Fish." << endl;
+        //cout << p2.getName() << " says - Go Fish." << endl;
+        fout << p2.getName() << " says - Go Fish." << endl;
         if (d1.size()!=0){
             drawnCard = d1.dealCard();
-            cout << p1.getName() << " draws " << drawnCard.toString() << "." << endl;
+            //cout << p1.getName() << " draws " << drawnCard.toString() << "." << endl;
+            fout << p1.getName() << " draws " << drawnCard.toString() << "." << endl;
             if (p1.rankInHand(drawnCard)){
                 Card matchingCard = p1.removeRankFromHand(drawnCard);
                 p1.bookCards(drawnCard, matchingCard);
-                cout << p1.getName() << " has a pair. " << p1.getName() << " books " << drawnCard.toString() << " and " << matchingCard.toString() << "." << endl;
+                //cout << p1.getName() << " has a pair. " << p1.getName() << " books " << drawnCard.toString() << " and " << matchingCard.toString() << "." << endl;
+                fout << p1.getName() << " has a pair. " << p1.getName() << " books " << drawnCard.toString() << " and " << matchingCard.toString() << "." << endl;
 
                 //If hand is empty after booking, draw another card
-                emptyHanded(p1,d1);
+                emptyHanded(p1,d1,fout);
             }
             else{
                 p1.addCard(drawnCard);
             }
         }
         else{
-            cout << "Deck is empty. No card is drawn." << endl;
+            //cout << "Deck is empty. No card is drawn." << endl;
+            fout << "Deck is empty. No card is drawn." << endl;
         }
     }
 
-    cout << endl;
-    //stateOfGame(p1,p2,d1);
+    //cout << endl;
+    fout << endl;
 
     return guessedRight;
 }
@@ -193,18 +210,24 @@ bool roundOfGame(Player &p1, Player &p2, Deck &d1){
 
 
 
-void gameResults(Player &p1, Player &p2){
-    cout << "RESULTS:" << endl;
-    cout << p1.getName() << " has " << p1.getBookSize() << " cards booked." << endl;
-    cout << p2.getName() << " has " << p2.getBookSize() << " cards booked." << endl;
+void gameResults(Player &p1, Player &p2, ofstream &fout){
+        //cout << "RESULTS:" << endl;
+    fout << "RESULTS:" << endl;
+        //cout << p1.getName() << " has " << p1.getBookSize() << " cards booked." << endl;
+    fout << p1.getName() << " has " << p1.getBookSize() << " cards booked." << endl;
+        //cout << p2.getName() << " has " << p2.getBookSize() << " cards booked." << endl;
+    fout << p2.getName() << " has " << p2.getBookSize() << " cards booked." << endl;
     if (p1.getBookSize()>p2.getBookSize()){
-        cout << p1.getName() << " wins!" << endl;
+            //cout << p1.getName() << " wins!" << endl;
+        fout << p1.getName() << " wins!" << endl;
     }
     else if (p1.getBookSize()<p2.getBookSize()){
-        cout << p2.getName() << " wins!" << endl;
+            //cout << p2.getName() << " wins!" << endl;
+        fout << p2.getName() << " wins!" << endl;
     }
     else{
-        cout << "It's a tie!" << endl;
+            //cout << "It's a tie!" << endl;
+        fout << "It's a tie!" << endl;
     }
 }
 
@@ -213,7 +236,7 @@ void gameResults(Player &p1, Player &p2){
 
 //Checks if the player is empty handed
 //Draws a new card for them if they are empty handed and the deck has more cards remaining
-void emptyHanded(Player &p, Deck &d1) {
+void emptyHanded(Player &p, Deck &d1, ofstream &fout) {
     if (p.getHandSize() == 0) {
         //If the deck has 1 or less cards, the game will end
         if (d1.size() == 0) {
@@ -223,7 +246,8 @@ void emptyHanded(Player &p, Deck &d1) {
         } else {
             Card drawnCard = d1.dealCard();
             p.addCard(drawnCard);
-            cout << p.getName() << "'s hand is empty. " << p.getName() << " draws " << drawnCard.toString() << endl;
+                //cout << p.getName() << "'s hand is empty. " << p.getName() << " draws " << drawnCard.toString() << endl;
+            fout << p.getName() << "'s hand is empty. " << p.getName() << " draws " << drawnCard.toString() << endl;
         }
     }
 }
